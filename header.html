@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+</head>
+<body class="header">
+
+	<div class="header">
+		
+		
+	</div>
+	<div class="menu">
+		<ul>
+			<li><a href="index.html" target="_top">Home</a></li>
+			<li><a href="blog.html" target="_top">Blog</a></li>
+			<li><a href="about.html" target="_top">About Me</a></li>
+			<li><a href="games.html" target="_top">Games</a></li>
+			<li><a href="about.html" target="_top">Characters</a></li>
+			<li><a href="memory.html" target="_top">Memory</a></li>
+		</ul>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="plain-draggable.min.js"></script>
+	<script type="text/javascript">
+		draggable = new PlainDraggable(document.getElementById('window-left'), {
+			zIndex: false
+		});
+		draggable = new PlainDraggable(document.getElementById('window-right'), {
+			zIndex: false
+		});
+
+		$('.menu a').click(function () {
+			$('.menu a').removeClass('active');
+			$(this).addClass('active');
+		});
+
+		// This is the part that highlights the menu tab
+		var path = window.top.location.pathname;
+		var filename = path.split('/').pop();
+		$('a[href="' + filename + '"]').addClass('active');
+
+    </script>
+</body>
+</html>
