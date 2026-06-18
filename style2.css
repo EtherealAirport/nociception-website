@@ -8,7 +8,8 @@ body {
 }
 
 @font-face {
-src: url('Dreamy.otf') format('otf');
+  font-family: 'Dreamy';
+  src: local ("Dreamy.otf") url("Dreamy.otf") format ("otf");
 }
 
 
