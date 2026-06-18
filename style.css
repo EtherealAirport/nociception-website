@@ -10,8 +10,8 @@ body {
 }
 
 @font-face {
-  src: url('Dreamy.otf') format('otf'),
-       url('Dreamy.otf') format('otf');
+font-family: 'Dreamy';	
+  src: url('Dreamy.otf') format('otf');
 }
 
 
