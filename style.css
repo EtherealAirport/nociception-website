@@ -11,7 +11,7 @@ body {
 
 @font-face {
   font-family: 'Dreamy';
-  src: local ("Dreamy.otf") url("Dreamy.otf") format ("otf");
+  src: url('Dreamy.otf);
 }
 
 
